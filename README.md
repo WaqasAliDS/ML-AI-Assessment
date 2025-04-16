@@ -64,8 +64,3 @@ Install required packages:
 ```bash
 pip install pandas numpy scikit-learn xgboost statsmodels ta matplotlib
 
-
-Let me know if you want:
-- A Jupyter version of the pipeline
-- A command-line interface (CLI)
-- Deployment script for a dashboard
