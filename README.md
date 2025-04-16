@@ -33,3 +33,39 @@ This project builds an intelligent machine learning pipeline to generate **Buy, 
 
 ## 📁 Project Structure
 
+
+---
+
+## 🔧 How It Works
+
+1. **Load stock-level GEX + EPS data** from CSVs or pickle.
+2. **Engineer features** including GEX metrics and technical indicators (RSI, MACD, etc.).
+3. **Generate labels** by calculating the Z-score of the future return.
+4. **Train models** (XGBoost, Random Forest, ARIMA).
+5. **Evaluate model accuracy** and visualize Buy/Sell signals on price charts.
+
+---
+
+## 📈 Visualizing Buy/Sell Signals
+
+After prediction, the script overlays signals on a price chart:
+
+- 🟢 **Buy (↑)** when signal = 2
+- 🔴 **Sell (↓)** when signal = 0
+
+This helps in **validating model performance visually**.
+
+---
+
+## 📦 Requirements
+
+Install required packages:
+
+```bash
+pip install pandas numpy scikit-learn xgboost statsmodels ta matplotlib
+
+
+Let me know if you want:
+- A Jupyter version of the pipeline
+- A command-line interface (CLI)
+- Deployment script for a dashboard
